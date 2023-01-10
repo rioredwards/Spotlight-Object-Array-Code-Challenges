@@ -67,7 +67,7 @@ test.skip('addSneakerCount should append the sneaker count to the object', () =>
   expect(addSneakerCount(nike)).not.toBe(nike)
 })
 
-test('getBrandNames should return an array of the names of the sneaker brands', () => {
+test.skip('getBrandNames should return an array of the names of the sneaker brands', () => {
   expect(getBrandNames(brands)).toStrictEqual(['Nike', 'Puma', 'Adidas'])
 })
 
@@ -75,7 +75,7 @@ test.skip('totalSneakerCount should return total number of sneakers', () => {
   expect(totalSneakerCount(brands)).toBe(14)
 })
 
-test.skip('convertToArray should convert Object key, value pairs to arrays', () => {
+test('convertToArray should convert Object key, value pairs to arrays', () => {
   expect(convertToArray({ a: 1, b: 2, c: 3 })).toStrictEqual([
     ['a', 1],
     ['b', 2],
