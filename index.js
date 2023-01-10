@@ -10,7 +10,7 @@ export const getName = ({ name }) => name
 // OUTPUT: the string 'Bob Smith lives at 123 Main Street, Anytown, USA'
 // REQS: use destructuring and template literals
 
-export const printAddress = () => {}
+export const printAddress = ({ name, address: { street } }) => `${name} lives at ${street}`
 
 // REFACTOR CHALLENGE
 // Refactor this function so that all values in the object are destructured
